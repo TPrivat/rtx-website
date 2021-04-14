@@ -1,10 +1,10 @@
 /* Header styling */
 .header {
+    padding: 80px;
     text-align: center;
     background: #006400;
     color: black;
 }
-
 
 
 /* Style the navigation bar*/
@@ -19,8 +19,12 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 15px 20px;
+    padding: 20px 20px;
     text-decoration: none; /* Removes underline */
+}
+
+.navbar a.right {
+    float: right;
 }
 
 /* Changes color when mouse hovers link */
