@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RTX ISA</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>The ISA of Nvidia's RTX line</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="home_page.html">Home</a>
+    <a href="gpu_design_page.html">Modern Day GPU Design</a>
+    <a href="gpu_vs_risc_page.html">GPU vs RISC</a>
+    <a href="isa_page.html">ISA</a>
+    <a href="computing_power_page.html">Computing Power</a>
+    <a href="modern_useage_page.html">Modern Uses</a>
+    <a href="citations_page.html" class="right">Citations</a>
+  </div>
+
+  <div>
+    <p>A fundamental design issue of all modern processors has been how the instruction set architecture is designed. GPUs
+    have become a popular platform for general purpose computing this is because of their massively parallel
+    architectures which gives a high throughput and power efficiency. As GPUs evolve across different generations,
+    their ISAs also evolve and it is intriguing to see how the ISA improves
+    and how such evolution impacts the micro-architecture as well as overall performance. The Nvidia programming
+    environment provides a parallel thread execution “PTX'' instruction set architecture for
+    using the GPU as a data-parallel computing device. PTX instructions generally have from zero to four operands.
+    plus an optional guard predicate appearing after an @ symbol to the left of the opcode:</p>
+  </div>
+
+  <div>
+    <ul>
+      <li>@p opcode;</li>
+      <li>@p opcode a;</li>
+      <li>@p opcode d,a;</li>
+      <li>@p opcode d, a, b;</li>
+      <li>@p opcode d, a, b, c;</li>
+    </ul>
+    <p>
+    If a result is expected from the instructions, the d operand is the destination operand, while a, b, and c
+        are source operands.
+    </p>
+  </div>
+</body>
+</html>
