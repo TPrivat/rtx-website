@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPU vs RISC</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>GPU vs. RISC</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="home_page.html">Home</a>
+    <a href="gpu_design_page.html">Modern Day GPU Design</a>
+    <a href="gpu_vs_risc_page.html">GPU vs RISC</a>
+    <a href="isa_page.html">ISA</a>
+    <a href="computing_power_page.html">Computing Power</a>
+    <a href="modern_useage_page.html">Modern Uses</a>
+    <a href="citations_page.html" class="right">Citations</a>
+  </div>
+
+  <div class="content">
+    <!-- Thinking this could be a table comparing the two rather than a wall of words.. -->
+    <!-- That would make it easy to add pics as well -->
+    <p>
+    RISC architectures are common in many central processing units. It uses a small set of highly optimized
+    instructions based around memory access and ALU operations. The RISC architecture is designed to be a general
+    purpose computing platform that executes instructions in series and achieves high instruction throughput. This
+    design leads to a significant number of the transistors being devoted to caches and registers rather than pure
+    computation.
+    </p>
+    <p>
+    With graphics processing units the design focus is on computational ability. They are optimized for executing many
+    parallel threads across multiple cores. These cores are quite simple when compared to the cores found in the central
+    processing unit but because they are designed to work together, rather than separately like RISC, they have a much
+    higher data throughput.
+    </p>
+    <p>
+    These differences become apparent when looking at the design layout of each architecture. Central processing units
+    have one datapath with its own L1 cache per core with a typical CPU having between four and eight cores. On the
+    other hand the graphics processing unit has two or more data paths per core and many cores per L1 cache. A typical
+    GPU can have many thousands of cores per card.
+    </p>
+    <p>
+    Clearly the graphics processing unit is designed for its pure computational ability. It has more compute than the
+    central processing unit but is specialized to graphics and arithmetic tasks and is not made for general computing
+    like
+    </p>
+  </div>
+
+</body>
+</html>

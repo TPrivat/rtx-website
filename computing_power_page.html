@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>More Power!</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>Computing Power of the RTX line</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="home_page.html">Home</a>
+        <a href="gpu_design_page.html">Modern Day GPU Design</a>
+        <a href="gpu_vs_risc_page.html">GPU vs RISC</a>
+        <a href="isa_page.html">ISA</a>
+        <a href="computing_power_page.html">Computing Power</a>
+        <a href="modern_useage_page.html">Modern Uses</a>
+        <a href="citations_page.html" class="right">Citations</a>
+    </div>
+
+    <div class="content">
+        <p>
+        The computing power of a GPU(graphics processing unit) is its use as a co-processor to accelerate CPUs for
+        general-purpose scientific and engineering computing.This massively parallel architecture of a GPU is what gives
+        it high compute performance and this has applications for general-purpose scientific and engineering computing.
+        </p>
+        <p>
+        Taking a look at the GPU computing power from a user's perspective the GPU accelerates applications running on the
+        CPU by offloading some of the compute-intensive and time consuming portions of the code. The rest of the application
+        still runs on the CPU and this makes the application runs faster because it's using the massively parallel
+        processing power of the GPU to boost performance. This is called  "heterogeneous" or "hybrid" computing.
+        </p>
+        <p>
+        CPU consists of four to eight CPU cores, while the GPU consists of hundreds of smaller cores. Together, they operate
+        to crunch through the data in the application.
+        </p>
+        <img class="image" src="GPU Vs CPU Core.PNG">
+        <p>
+        Figure 1:Differences between a CPU and GPU;Blogs.nvidia.com
+        </p>
+        <p>
+        Driven by high market demand for real-time, high-definition 3D graphics, the programmable GPU has evolved into a
+        highly parallel, multithreaded, manycore processor with tremendous computational horsepower and very high memory
+        bandwidth. The GPU is especially well-suited to address problems that can be expressed as data-parallel
+        computations, the same program is executed on many data elements in parallel, with a high ratio of arithmetic
+        operations to memory operations.
+        </p>
+        <p>
+        Both the CPU and GPU are programmable processors, but there are a few key differences between GPUs and CPUs and
+        hence the reason GPU is not general purpose processing units like CPU.
+        </p>
+        <ul>
+            <li>CPUs are more concerned with achieving high instruction throughput, while GPUs are more concerned with
+                achieving high data throughput.</li>
+            <li>CPUs are not doing time sensitive tasks. GPUs have to have low latency, especially if they want to support
+                virtual reality.</li>
+            <li>CPUs are concerned with maintaining separation between multiple "active" programs. GPU hardware runs a
+                single program at a time.</li>
+        </ul>
+        <p>
+        In terms of architectural needs the CPUs need to have deep pipelines, and be able to predict what instructions
+        might come next, while GPUs need to have many cores that run the same stream of instructions on different data.
+        Also, CPUs can complete tasks in indeterminate time. GPUs need to complete tasks in determinate time. While managing
+        tasks, CPUs need some method of managing multiple active tasks but the GPUs need only manage one task at a time.
+        </p>
+        <p>
+        Since processors are just hardware implementations of an ISA, a CPU will be geared towards quickly completing
+        single instructions, while GPUs will be geared towards quickly operating on lots of data.
+        </p>
+        <p>
+        NVIDIA realized the potential of bringing this performance to the larger scientific community and invested in
+        modifying the GPU to make it fully programmable for scientific applications. Plus, it added support for high-level
+        languages like C, C++, and Fortran. This led to the CUDA parallel computing platform for the GPU.
+        </p>
+    </div>
+
+</body>
+</html>
