@@ -9,8 +9,9 @@
 
 /* Style the navigation bar*/
 .navbar {
-    overflow:hidden;
+    overflow: hidden;
     background-color: #006400;
+    color: black;
 }
 
 /* Style the links */
@@ -18,7 +19,7 @@
     float: left; /* ensures links stay side by side*/
     display: block;
     color: black;
-    text-align: center;
+    text-align: right;
     padding: 20px 20px;
     text-decoration: none; /* Removes underline */
 }
@@ -29,11 +30,21 @@
 
 /* Changes color when mouse hovers link */
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #787878;
     color: black;
 }
 
 h1.info {
     text-align: center;
     color: black;
+}
+
+/* Style for body portion of page as a whole */
+body {
+    background-color: #787878;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
 }
