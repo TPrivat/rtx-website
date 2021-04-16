@@ -19,6 +19,9 @@
     <a href="modern_useage_page.html">Modern Uses</a>
     <a href="citations_page.html" class="right">Citations</a>
   </div>
+    
+  <h2>The Parallel Thread Execution ISA</h2>
+  <h3>PTX</h3>
 
   <div>
     <p>A fundamental design issue of all modern processors has been how the instruction set architecture is designed. GPUs
@@ -43,6 +46,47 @@
     If a result is expected from the instructions, the d operand is the destination operand, while a, b, and c
         are source operands.
     </p>
+  </div>
+    
+  <div class="itable">
+    <h2 class="ititle">PTX Instruction Preview</h2>
+    <table>
+      <tr>
+        <th>Integer</th>
+        <th>Floating Point</th>
+        <th>Comparison/Selection</th>
+        <th>Control</th>
+        <th>Parallel</th>
+      </tr>
+      <tr>
+        <td>add</td>
+        <td>add</td>
+        <td>set</td>
+        <td>{}</td>
+        <td>bar</td>
+      </tr>
+      <tr>
+        <td>sub</td>
+        <td>sub</td>
+        <td>setp</td>
+        <td>@</td>
+        <td>bar.warp.sync</td>
+      </tr>
+      <tr>
+        <td>mul</td>
+        <td>mul</td>
+        <td>selp</td>
+        <td>bra</td>
+        <td>membar</td>
+      </tr>
+      <tr>
+        <td>div</td>
+        <td>div</td>
+        <td>slct</td>
+        <td>call</td>
+        <td>atom</td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
