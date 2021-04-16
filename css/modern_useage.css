@@ -1,0 +1,44 @@
+/* Header styling */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #006400;
+    color: black;
+}
+
+
+/* Style the navigation bar*/
+.navbar {
+    overflow: hidden;
+    background-color: #006400;
+    color: black;
+}
+
+/* Style the links */
+.navbar a {
+    float: left; /* ensures links stay side by side*/
+    display: block;
+    color: black;
+    text-align: right;
+    padding: 20px 20px;
+    text-decoration: none; /* Removes underline */
+}
+
+.navbar a.right {
+    float: right;
+}
+
+/* Changes color when mouse hovers link */
+.navbar a:hover {
+    background-color: #787878;
+    color: black;
+}
+
+/* Style for body portion of page as a whole */
+body {
+    background-color: #787878;
+}
+
+h2 {
+    text-align: center;
+}
